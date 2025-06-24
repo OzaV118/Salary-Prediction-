@@ -1,9 +1,10 @@
 import numpy as np
 import pickle
 import streamlit as st
+import os
 
-
-salary_model = pickle.load(open("Model\salary_model.sav", "rb"))
+model_path = os.path.join("Model", "salary_model.sav")
+salary_model = pickle.load(open(model_path, "rb"))
 
 gender_map = {"Male": 1, "Female": 0}
 board_map = {"Central": 1, "Others": 0}
