@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 
 
-salary_model = pickle.load(open("D:\Internship\Placement App\Model\salary_model.sav", "rb"))
+salary_model = pickle.load(open("Model\salary_model.sav", "rb"))
 
 gender_map = {"Male": 1, "Female": 0}
 board_map = {"Central": 1, "Others": 0}
